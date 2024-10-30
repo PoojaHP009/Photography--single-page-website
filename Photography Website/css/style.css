@@ -1,0 +1,539 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;   
+}
+
+
+@media (max-width:500px){
+    .home{
+        background-position: 50%;
+        font-size: 15px;
+    }
+    /* .container .navbar-nav{
+        margin-left: -100px;
+    } */
+    .packages .container .card{
+        margin-top: 30px;
+    }
+    .packages2ndrow{
+        margin-top: -100px;
+    }
+    .About-Us iframe{
+        width: auto;
+    }
+    .book .responsive{
+        width: auto;
+        height: auto;
+    }
+    
+}
+#navbar{
+    background: #f9f9f9;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    z-index: 7;
+}
+
+.main-text h1{
+    color: #3D550C;
+    font-weight: 800;
+    font-family: "Noto Sans", sans-serif;
+}
+
+
+
+/* nav bar section starts */
+.navbar .container #logo img{
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+
+    box-shadow: 0px 10px 10px -4px black;
+}
+/* 
+.container .navbar-nav{   
+    margin-left: 700px;
+} */
+
+.navbar .container .nav-link:hover{
+    letter-spacing: 2px;
+    
+    border-radius: 10px;
+    /* background-color: #141517; */
+    color:rgb(248, 227, 188);
+    /* transition: 1s; */
+    background-image: linear-gradient(to bottom right,#6A9113,#141517);
+    
+}
+
+.navbar .container .btn:hover{
+    letter-spacing: 2px;
+    
+    border-radius: 10px;
+    /* background-color: #141517; */
+    color:rgb(248, 227, 188);
+    /* transition: 1s; */
+    background-image: linear-gradient(to bottom right,#6A9113,#141517);
+    
+}
+
+/* nav bar section ends  */
+
+/* home section starts */
+
+.home{
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.2)),url(../images/home1.jpg);
+    opacity: 0.7;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.home .container{
+    text-align: center;
+    padding-top: 200px;
+    color: white;
+    text-shadow: 0px 1px 1px black;
+}
+.home h1{
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    color: #81B622;
+    font-family: "Noto Sans", sans-serif;
+
+}
+
+/* .home #learnbtn{
+    border-radius: 10px;
+    border: none;
+    width: 100px;
+    height: 30px;
+    color: whitesmoke;
+    text-align: center;
+    padding-bottom: 5px;
+} */
+
+.home .container .btnhome{
+    background-color: ghostwhite;
+    color: #3D550C;
+}
+.home .container .btnhome:hover{
+    border: none;
+    color: ghostwhite;
+    background-image: linear-gradient(to bottom right,#6A9113,#141517);
+
+}
+/* home section ends  */
+
+/* whatsup sticky start  */
+
+.whatsupbtn .fixed-bottom .whatsupbtn123{ 
+    float: right;
+    margin-bottom: 20px;
+    margin-right:15px ;
+    height: 50px;
+    width: auto;
+    border-radius: 50px;
+    color: whitesmoke;
+
+}
+.whatsupbtn form .darklight{
+    color: black;
+    margin-left: 1200px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    padding: 5px;
+    
+}
+
+.whatsupbtn .fixed-bottom i{
+    margin: 10px;
+}
+
+.whatsupbtn .fixed-bottom .whatsupbtn123:hover{
+    transform: scale(1.1);
+}
+
+/* whatsup sticky end  */
+
+/* packages  section starts */
+.main-text h1{
+    text-align: center;
+}
+
+.packages .card2 {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    
+}
+  
+.packages .card2 img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: rgba(0,0,0,0.1) 0x 4px 12px;
+}
+
+.packages .card2 h3{
+    margin-top: 10px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.checked {
+    color: #6A9113;
+}
+
+
+
+.overlay {
+    position: absolute;
+
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    overflow: auto;
+    transition: 1.1s ease;
+    border-radius: 5px;
+    /* background-color: #008CBA; */
+    background: linear-gradient(to bottom right,#93b93f,#141517);
+
+}
+
+.card2:hover .overlay {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.packages .text {
+    
+    color:rgb(248, 227, 188);
+    font-size: 12px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-60%, -40%);
+    text-align: justify;
+    
+}
+
+.packages .card a{
+    /* background-color: #ffa500; */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.packages .container .btnbook{
+    background-color: rgb(236, 241, 235);
+    color: black;
+    border: 2px solid black;
+}
+.packages .container .btnbook:hover{
+    border: none;
+    color: ghostwhite;
+    background-image: linear-gradient(to bottom right,#6A9113,#141517);
+
+}
+
+
+
+/* packages section ends  */
+
+/* book section starts */
+#book{
+    /* padding-top: 50px; */
+    background: #EEEDE7;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 750px;
+}
+
+
+  
+.book .flip-box {
+background-color: transparent;
+width: 550px;
+height: 550px;
+border: 1px solid #f1f1f1;
+perspective: 1000px;
+margin: auto;
+
+}
+
+.book .flip-box-inner {
+position: relative;
+width: auto;
+height: 100%;
+text-align: center;
+transition: transform 0.8s;
+transform-style: preserve-3d;
+}
+
+.book .flip-box:hover .flip-box-inner {
+transform: rotateY(180deg);
+}
+
+.book .flip-box-front, .flip-box-back {
+position: absolute;
+width: auto;
+height: 100%;
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+}
+
+.book .flip-box-front {
+background-color: #bbb;
+color: black;
+}
+
+.book .flip-box-back {
+background: linear-gradient(to bottom right,#6A9113,#141517);
+color: white;
+transform: rotateY(180deg);
+}
+
+.book form select{
+    margin-right: 23px;    
+}
+.book form input,select{
+    margin-left: 25px;
+    width: 500px;
+    color: black;
+    border-radius: 10px;
+    outline: none;
+    padding: 5px;
+    border: none;
+    margin-bottom: 5px;
+    box-shadow: 0px 5px 5px -6px rgb(229, 226, 226);
+}
+
+.book form textarea{
+    margin-left: 25px;
+    width: 500px;
+    align-items: center;
+    border-radius: 10px;
+    resize: none;
+    height: 150px;
+    border: none;
+    outline: none;
+    box-shadow: 0px 5px 5px -6px rgb(229, 226, 226);
+    margin-bottom: 10px;
+}
+.book .submit{
+    width: 150px;
+    background-color: ghostwhite;
+    color: #3D550C;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.book .submit:hover{
+    width: 170px;
+    background-color: #6A9113;
+    color: ghostwhite;
+}
+/* book section ends  */
+
+/* services section starts */
+
+/* .services .card{
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+    border: none;
+    cursor: pointer;
+}
+
+.services .card i{
+    font-size: 80px;
+    color: #81B622;
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 15px;
+    
+} */
+
+/* services section end  */
+
+
+
+/* gallery starts */
+
+
+
+
+.gallery {
+    box-sizing: border-box; 
+    /* background-color: #f1f1f1; */
+    padding: 20px;
+    font-family: Arial;
+  }
+  
+  /* Center website */
+
+
+.gallery .main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.gallery h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
+
+.gallery .row {
+    margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.gallery .row,
+.gallery .row > .gallery .column1 {
+    padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.gallery .column1 {
+    float: left;
+    width: 33.33%;
+    display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+    .gallery .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.gallery .content {
+    background-color: white;
+    padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.gallery .show {
+    display: block;
+}
+
+/* Style the buttons */
+.gallery .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: white;
+    cursor: pointer;
+    width: 250px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.gallery .btn:hover {
+    background-color: #ddd;
+}
+
+/* .gallery .btn.active {
+background-color: #666;
+color: white;
+} */
+
+
+
+/* gallery ends  */
+
+/* feedback section start  */
+
+.feedback{
+    background-color: #f1f1f1;
+}
+
+
+/* feedback section end  */
+
+/* about-us start  */
+
+
+.About-Us form table{ 
+    padding: 20px;
+}
+
+.About-Us .container form{
+    /* margin-left: 25px; */
+    width: auto;
+    /* color: whitesmoke; */
+    border-radius: 10px;
+    outline: none;
+    padding: 5px;
+    border: none;
+    margin-bottom: 10px;
+    
+}
+.About-Us .container form .submit{
+    width: 150px;
+    background-color: ghostwhite;
+    color: #3D550C;
+    font-weight: 600;
+    transition: 0.5s;
+    
+    border-radius: 10px;
+}
+
+.About-Us .container form .submit:hover{
+    width: 170px;
+    background-color: #6A9113;
+    color: ghostwhite;
+}
+/* about-us end  */
+
+/* accordion starts */
+
+.Frequent-Asked-Question{
+    background-color: #f1f1f1;
+}
+
+
+/* accordion ends  */
+
+/* foooter starts */
+
+footer{
+    padding-top: 40px;
+    padding-bottom: 30px;
+    background-color: #2b4162; 
+    background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
+    color: whitesmoke;
+}
+
+.social-links a{
+    width: 50px;
+    display: inline;
+    height: 25px;
+}
+.fa-instagram{
+    /* background: #833ab4; */
+    background: linear-gradient(
+      to right,
+      #833ab4,#fd1d1d,#fcb045
+    );
+    color: black;
+    
+}
+
+/* footer ends  */

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOgin form design</title>
+    <link rel="stylesheet" href="css/loginstyle.css">
+</head>
+<body>
+    <div class="box">
+        <img src="images/img.png" class="main-img" alt="">
+        <h1>Login Now</h1>
+        <form action="./index.html">
+            <p>Username</p>
+            <input type="text" name="" id="username123" placeholder="Username">
+            <p>Password</p>
+            <input type="password" name="" id="" placeholder="Password">
+            
+            <input type="submit" name="" id="" value="Login" onclick="myfun()">
+
+            <a href="#">Forgot Passord? Reset Password</a>
+            <!-- <a href="#">Subcribe the Channel</a> -->
+            
+            
+        </form>
+    </div>
+    <script>
+        function myfun(){
+            
+            let name = document.getElementById("username123").value
+            // console.log(name);
+            alert('welcome to photography website '+name)
+            
+        }
+    </script>
+</body>
+</html>
